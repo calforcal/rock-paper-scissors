@@ -144,9 +144,10 @@ function playRound(computerSelection, playerSelection) {
         else if (computerSelection == "scissors") {
             console.log("It\'s a tie.");
         }
-        else {
-            console.log("Please enter a Rock, Paper or Scissors. You've lost this round.");
-        }
+    }
+    else {
+        console.log("Please enter a Rock, Paper or Scissors. You've lost this round.");
+        computerScore++;
     }
 }
 
