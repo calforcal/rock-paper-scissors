@@ -102,6 +102,14 @@ function computerChoice() {
     return opponentChoice;
 }
 
+//Buttons to Start Game
+const choiceButtons = document.querySelector('body');
+const paperBtn = document.createElement('button');
+paperBtn.textContent = 'Paper';
+
+choiceButtons.appendChild(paperBtn);
+
+
 function playRound(computerSelection, playerSelection) {
     userChoice = playerSelection.toLowerCase();
 
@@ -151,7 +159,7 @@ function playRound(computerSelection, playerSelection) {
     }
 }
 
-function game() {
+/*function game() {
     let computerSelection;
     let playerSelection;
 
@@ -179,3 +187,4 @@ function game() {
         console.log("It\'s a tie! Humans and Robots are equals.");
     }
 }
+*/
